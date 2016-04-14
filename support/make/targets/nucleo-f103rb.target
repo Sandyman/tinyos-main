@@ -1,0 +1,7 @@
+PLATFORM = nucleo-f103rb
+
+$(call TOSMake_include_platform,stm32)
+
+nucleo-f103rb: $(BUILD_DEPS)
+	@:
+
