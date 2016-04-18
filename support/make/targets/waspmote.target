@@ -1,0 +1,10 @@
+#-*-Makefile-*- vim:syntax=make
+
+TARGET = waspmote
+
+$(call TOSMake_include_platform,waspmote)
+
+$(call TOSMake_include_make_platform,avr)
+
+waspmote: $(BUILD_DEPS)
+	@:
