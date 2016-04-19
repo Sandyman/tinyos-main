@@ -41,7 +41,6 @@
 
 module MotePlatformP @safe() {
     provides interface Init as PlatformInit;
-    uses interface GeneralIO as SerialIdPin;
     uses interface Init as SubInit;
 }
 
@@ -50,10 +49,6 @@ implementation {
         // Pull C I/O port pins low
         PORTC = 0;
         DDRC = 0xff;
-
-        // Prevent sourcing current
-        call SerialIdPin.makeInput(); 
-        call SerialIdPin.clr();
 
         return call SubInit.init();
     }

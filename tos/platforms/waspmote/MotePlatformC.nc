@@ -43,11 +43,10 @@ configuration MotePlatformC {
 }
 
 implementation {
-    components MotePlatformP, HplAtm128GeneralIOC;
+    components MotePlatformP;
 
     PlatformInit = MotePlatformP;
 
-    MotePlatformP.SerialIdPin -> HplAtm128GeneralIOC.PortA4;
     SubInit = MotePlatformP.SubInit;
 }
 
