@@ -1,7 +1,6 @@
 #-*-Makefile-*- vim:syntax=make
 
 PFLAGS += -I%T/platforms/waspmote
-PFLAGS += -I%T/platforms/micaz
 PFLAGS += -I%T/platforms/mica
 PFLAGS += -I%T/chips/atm1281
 PFLAGS += -I%T/chips/atm1281/adc
